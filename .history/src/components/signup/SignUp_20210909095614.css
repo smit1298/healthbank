@@ -1,0 +1,10 @@
+.content {
+  height: 20000px !important;
+}
+
+.card {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none; 
+  margin-bottom: 10px; 
+}

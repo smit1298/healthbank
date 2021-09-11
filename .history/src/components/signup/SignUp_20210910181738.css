@@ -1,0 +1,11 @@
+
+.card {
+    margin-left: auto !important;
+  margin-right: auto !important;
+  float: none; 
+  margin-bottom: 10px; 
+}
+ .seen{
+   position: relative;
+   padding-left: 3px;
+ }

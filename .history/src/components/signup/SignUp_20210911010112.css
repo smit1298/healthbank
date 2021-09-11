@@ -1,0 +1,20 @@
+
+.card {
+    margin-left: auto !important;
+  margin-right: auto !important;
+  float: none; 
+  margin-bottom: 10px; 
+}
+
+.form-group{
+position:relative;
+/* pointer-events: none; */
+}
+.form-group .seen {
+  position: absolute;
+  margin-top: -25px;
+}
+
+.right-seen .seen{
+  right: 1px;
+}

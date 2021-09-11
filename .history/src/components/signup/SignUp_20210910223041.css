@@ -1,0 +1,22 @@
+
+.card {
+    margin-left: auto !important;
+  margin-right: auto !important;
+  float: none; 
+  margin-bottom: 10px; 
+}
+
+
+ .seen {
+  position: relative;
+  z-index: 1;
+  display: block;
+  /* width: 1050px; */
+  height: 25px;
+  line-height: 2.375rem;
+  text-align: center;
+  /* color: #aaa; */
+  /* left:0; */
+  margin-top: -34px;
+  bottom: 4px;
+}

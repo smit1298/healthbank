@@ -1,0 +1,24 @@
+
+.card {
+    margin-left: auto !important;
+  margin-right: auto !important;
+  float: none; 
+  margin-bottom: 10px; 
+}
+
+.form-group{
+position:relative;
+/* pointer-events: none; */
+}
+.form-group .seen {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  height: 25px;
+  line-height: 2.375rem;
+  text-align: center;
+  color: #aaa;
+  left:0;
+  margin-left : 00%;
+  bottom: 4px;
+}

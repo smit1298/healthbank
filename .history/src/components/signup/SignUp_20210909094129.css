@@ -1,0 +1,11 @@
+/* .content {
+  height: 100px !important;
+} */
+
+.card {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  height: 100px !important;
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}

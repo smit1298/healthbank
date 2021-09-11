@@ -1,0 +1,6 @@
+.card {
+    margin-left: auto !important; 
+    margin-t: auto !important; 
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}

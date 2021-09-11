@@ -1,0 +1,6 @@
+.content{}.card {
+    margin-left: auto !important; 
+    margin-right: auto !important; 
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}

@@ -1,0 +1,12 @@
+
+.card {
+    margin-left: auto !important;
+  margin-right: auto !important;
+  float: none; 
+  margin-bottom: 10px; 
+}
+ .seen{
+   position: relative;
+   margin-left: 95%;
+   margin-top: -10px;
+ }
