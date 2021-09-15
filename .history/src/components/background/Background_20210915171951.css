@@ -1,0 +1,12 @@
+.ellipse {
+  position: absolute;
+  /* top: 60px; */
+  /* left: 80px; */
+}
+
+.chat {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  margin: 5px;
+}
