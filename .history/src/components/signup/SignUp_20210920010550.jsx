@@ -39,7 +39,7 @@ const SignUp = () => {
     const lastNameErr = {};
     let isValid = true;
 
-    if (firstName.trim().length === " ") {
+    if (firstName.trim().length == " ") {
       firstNameErr.firstNameShort = "First name is required";
       isValid = false;
     }

@@ -39,7 +39,7 @@ const SignUp = () => {
     const lastNameErr = {};
     let isValid = true;
 
-    if (firstName.trim().length === " ") {
+    if (firstName.trim().length == " ") {
       firstNameErr.firstNameShort = "First name is required";
       isValid = false;
     }
@@ -47,7 +47,7 @@ const SignUp = () => {
     if (firstName.trim().length > 10) {
       firstNameErr.firstNameLong = "First name is too long";
       isValid = false;
-    }
+    } 
 
     if (!lastName.includes("123")) {
       lastNameErr.lastName123 = "Last Name must have 123";
@@ -76,16 +76,7 @@ const SignUp = () => {
         </h6>
       );
     } else {
-      setEmailError(
-        <h6
-          style={{
-            fontWeight: "bold",
-            color: "red"
-          }}
-        >
-          Enter a valid email
-        </h6>
-      );
+      setEmailError(<h6>Enter a valid email</h6>);
     }
   };
 
@@ -97,21 +88,7 @@ const SignUp = () => {
             <h3 className="text-center">Get Started</h3>
             <p>Sign up to have access to Healthbank</p>
           </div>
-          <Form.Group className="mb-3" controlId="formBasicName">
-            <Form.Label>Firstname</Form.Label>
-            <Form.Control
-              autoFocus
-              name="name"
-              placeholder="Enter Firstname"
-              value={firstName}
-              onChange={(e) => {
-                setFirstName(e.target.value);
-              }}
-            />
-            {Object.keys(firstNameErr).map((key) => {
-              return <div style={{ color: "red" }}>{firstNameErr[key]}</div>;
-            })}
-          </Form.Group>
+          <Input>
           <Form.Group className="mb-3" controlId="formBasicName">
             <Form.Label>Lastname</Form.Label>
             <Form.Control
@@ -136,7 +113,14 @@ const SignUp = () => {
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>
-            <>{emailError}</>
+            <h3
+              style={{
+                fontWeight: "bold",
+                color: "red"
+              }}
+            >
+              {emailError}
+            </h3>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicNumber">
             <Form.Label>Phone number</Form.Label>

@@ -39,8 +39,8 @@ const SignUp = () => {
     const lastNameErr = {};
     let isValid = true;
 
-    if (firstName.trim().length === " ") {
-      firstNameErr.firstNameShort = "First name is required";
+    if (firstName.trim().length == " ") {
+      firstNameErr.firstNameShort = "First name is r";
       isValid = false;
     }
 
@@ -76,16 +76,7 @@ const SignUp = () => {
         </h6>
       );
     } else {
-      setEmailError(
-        <h6
-          style={{
-            fontWeight: "bold",
-            color: "red"
-          }}
-        >
-          Enter a valid email
-        </h6>
-      );
+      setEmailError(<h6>Enter a valid email</h6>);
     }
   };
 
@@ -136,7 +127,14 @@ const SignUp = () => {
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>
-            <>{emailError}</>
+            <h3
+              style={{
+                fontWeight: "bold",
+                color: "red"
+              }}
+            >
+              {emailError}
+            </h3>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicNumber">
             <Form.Label>Phone number</Form.Label>
